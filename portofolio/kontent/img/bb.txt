@@ -1,0 +1,76 @@
+latihan membat webste
+
+- bungkus semua menggunakan container
+
+1.buat dengan lebar 800px
+2.suruh ditengah
+3.color bebas(cerah)
+4.border optional
+
+buat font standard pd body dengan ukuran 16px/28px arial sans serif
+
+
+- buat class header
+	- h1 judul 
+	- link link
+
+1.atur supaya gamepet sm atas(gunakan )
+2.atur supaya gamepet sm bawah juga
+3.gedein font judul dan tebal
+4.atur li kasih display inline-block
+5.kasih jarak biar ga mepet
+*note belajar lg inline-block 
+ubah link(decoration)
+color bebas
+kasih padding
+- biar dipencet warnanya beda a:h....
+background color bebas
+color
+
+
+buat class hero jangan dienter biarin aja kosong biar dikasih gambar
+css
+1.bg img : url
+2.size cover
+position x dan y center
+kasih border atas bawah
+
+
+
+bungkus clas menggunakan content cf 
+didalam cf ada class main
+class main isinya
+judul artikel h
+buat paragraf dg class penulis>ditulis : make link
+kasih lorem p 1
+kasih lorem p 100
+kasih lorem p 80
+buat class side bar
+isinya h3
+<img potoku src.png alt="ikin">
+mauskan kalimat
+
+
+pd main
+kasih padding 20
+width 600
+box sizing: border box biar tetap 600
+float : left==biar kekanan
+
+main pd h2
+font size 28 bold
+
+main penulis
+sizenya kecil aja
+margin-top :  -5 == biar ke atas ????
+
+optional kalo penulisnya mau diedit yalos
+
+main pd p
+margin bottom 20
+size 14
+
+
+
+
+

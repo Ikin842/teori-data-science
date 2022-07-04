@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Random Forest</span>
+                    <span class="profession">with scikit learn</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        
+        <div class="image">
+            <img src="images/rf.png" alt="">
+        </div>
+        <br>
+        <div class="text2">Random Forest</div>
+        <p class="text3">Oke jadi kali ini kita akan mempelajari algoritma baru yaa gays yaa. oke langsung aja, oke misal gini kita punya data yg biasa biasa aja pake linear Regression itu bisa ya gampang, kalo datanya itu agak likak likuk, kita tinggal tambahin poly dan its work, tapi kalo datanya itu bentuknya udh aneh banget contoh kaya gambar disamping, pake poly bisa aja tambahin polynya buat prediksi itu, dan poly yg besar tidak direkomendasikan karena fiturnya akan meledak, tapi ada teknik lain untuk ngehandle data yang udah aneh aneh</p>
+        <br><br><br><br>
+        <div class="text2">Idea decision tree</div>
+        <p class="text3">Oke enjoy aman, disini saya akan menerangkan bagaimana cara kerja decision tree dulu yaa, oke jadi kan kita punya data yg aneh td yaaa, nah step 1, kita pecah pecah datanya(tarik garis), kita cuma tarik tarik garis aja dan prediksi kita itu adalah rata rata dari semua yg kita tarik garis td, jadi prediksi kita itu yg warna merah ini, kaya tangga ngga beraturan lah bisa dibilang, biasanya kan prediksi kita itu yg smooth smooth ya tp karena kita ngambil rata rata prediksi kita petak petak kaya gt yaa gaysss dan dengan mudahnya kita bisa melakukan prediksi, dan sebenarnya garis merah ini adalah decision, kenapa decison soalnya kita tarik garis x=20, dan kita pecah jadi dua x < 20, dan x > 20, dimana garis biru melambangkan x < 20 dan garis merah melambangkan x > 20, dan tinggal tarik rata ratanya aja, jadi ini semua garis merah yg td itu cuma decision doang dan hanya dengan membuat decision decision seperti td kita bisa membuat prediksi dengan mudah, logikanya mungkin kaya kita nglakuin if else di programming yah, if nilai = 75 - 90 indeks = A dsb, nah itukan juga sebuah decision yah, itu cuma decison decision aja baru tarik satu prediksi nah itulah yg kita lakukan di decision tree</p>
+        <div class="image">
+            <img src="images/dt2.png" alt="">
+            <img src="images/dt1.png" alt="">
+            <img src="images/dt.png" alt="">
+        </div>
+        <p class="text3">kenapa tau siapa yg kiri siapa yg kanan?karena kita ada angka dibawahnya dimana x = 20, kemudian kita mulai buat treenya jika x lebih < 20 akan ada percabangan dan prediksi tsb let say y = 20 semua yg dikirinya dianggap 20 semua yg dikananya dianggap 40 berapanya tergantung rata rata mereka aja, belum puas errornya masih gede?? buat lagi decison lagi teru tarik rata rata lagi dan errornya makin kecil lagi dan pohonya akan bercabang lagi dan kita bisa cabang terus sampai akurasinya bisa 100% dan itu kita gamau yaa karena overfitt, dan ini bisa semua data time series, klasifikasi dll, dan ini merupakan algoritma yg udah tua yaa gaysss </p>
+        <br>
+        <p class="text3">dan supaya machine bisa menentukan decision terbaik, machine akan coba satu satu, hitung error sampe error yg paling kecil, setelah itu baru cari lagi decision terbaik mau cabang dimana itulah yg dilakukan decision tree supaya kita ambil decisonya ga random, karena kalo kita ambil selalu decision terbaik harapanya kita gabutuh cabang banyak banyak</p>
+        <div class="image">
+            <img src="images/dt4.png" alt="">
+            <img src="images/dt3.png" alt="">
+        </div>
+        <p class="text4">Parameter random forest</p>
+        <div class="image">
+            <img src="images/dt5.png" alt="">
+        </div>
+        <p class="text3">Oke jadi mesin itu akan mencari best decision dengan cara mencoba satu per satu, dan mesin itu komputasinya cepet, gaharus tengah tengah yg pnting error paling kecil hanya dengan satu percabangan(best decision) dan bentuknya lucu yah prediksi kita bentuknya kaya tangga, simple yaa ideanya, nah itu baru decision pertama kita bisa lanjutin decison kedua, ketiga dst.oiya btw kita salah ambil gambar best decision ya.aturan sampe titik paling bawah tapi yaudh gpp yg pnting udah paham, harusnya di x<=2.84, dan decision tree kurang cocok untuk data time series walaupun bisa tapi kurang cocok</p>
+        <p class="text2">1. Max depth</p>
+        <p class="text3">Oke jadi max depth ini parameter random forest yg mau berapa ada cabang/decision pada prediksi kita, kurang lebih kaya gitu, oke kita bisa lihat illustrasi dibawah mesin akan mengambil best decision yg mana best decisonya x<=2.84, dan perhatikan saat kita menambahkan depth best decision tidak akan berubah yang berubah hanya sampingnya aja, dan kita bisa liat pada gambar dibawah yaa jelas yaa, kita juga bisa lihat pohonya dibawah, dan kalo kita tambahkan depthnya maka akan amat sangat overfit yaa gays yaa bisa dilihat aja, dan pohon dari yg sangat ovefitt ini tidak akan saya tampilkan karena ribett</p>
+        <div class="image">
+            <img src="images/dt6.png" alt="">
+            <img src="images/dt8.png" alt="">
+            <img src="images/dt10.png" alt="">
+        </div>
+        <div class="image">
+            <img src="images/dt7.png" alt="">
+            <img src="images/dt9.png" alt="">
+        </div>
+        <br><br><br><br>
+        <p class="text2">2. Minimum Sample leaf</p>
+        <p class="text3">Oke jadi karena kita tau kalo pake max depth itu gampang overfit maka random forest punya solusinya dan jawabanya adalah minimum sample leaf, jadi minimum sample leaf ini akan membatasi daun cabang yg ada pada decision tree kita, oke untuk lebih clearnya kita bisa liat ke gambar bawah aja</p>
+        <br>
+        <p class="text3">mula mula kita overfitkan aja dulu dengan depth = 7, lalu kita kasih min samples leaf = 3, dan liat hasilnya tarah model kita udh ga overfit lagi dan kalo kita lihat jumlah data pada masing masing decision itu 3 data. nah itu akan membantu kita mengurangi over fitt yah penggunaan min_sample_leaf jg kita pikirkan dengan baik karena terlalu besar angka yg kita batasi maka akan cenderung underfit, dan inilah akhir dari decision tree yah jadi mau ada berapa cabang batesin hasil akhir intinya gitu </p>
+
+        <div class="image">
+            <img src="images/dt12.png" alt="">
+            <img src="images/dt13.png" alt="">
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <p class="text2">Bootstrap aggregatting(bagging)</p>
+        <p class="text3">oke sebelum ke bootstrap kita jelasin dulu apa itu bootstrap, boostrap adalah mengambil data secara acak dengan pengembalian dan secara statistik bootstrap hanya mengambil 60-70% data saja, oke akan lebih clearnya liat di gambar bawah, jelaskan yaaa kita bootstrap maka akan ambil data secara acak 70%, dan kita bootstrap lagi akan ambil data acak lagi, kenapa kita fitt?? itu karena kita mau bagging yaa gayss yaa.oke lanjut</p>
+        <div class="image">
+            <img src="images/bp..png" alt="">
+            <img src="images/bp2.png" alt="">
+            <img src="images/bp3.png" alt="">
+            <img src="images/bp4.png" alt="">
+        </div>
+        <p class="text3">jadi gays apa itu bagging ? jadi gini intinya jadi boostrap td itukan mengambil data secara acak dengan pengembalian yaa.nah gmna klo kita bootsrap pada pohon yg berbeda.biarpun overfit tp setiap bootstrap itu kan pd data yg berbeda yah karena secara acak nah gimana kalo kita bootstrap beberpa pohon bootstrap secara acak dan kita gabungkan antara bootstrap pohon satu dan pohon lainya</p>
+        <br>
+        <p class="text3">Oke bisa kita lihat pada gambar dibawah dimana kita punya 3 pohon dan masing masing kita bootstrap dan dengan depth = 4 lalu kita fit masing masing pohon itu, dan hasilnya apa taraaa hasilnya adalah gambar yg disampingnya jadi hasilnya adalah gabungan antara pohon 1, pohon 2 dan pohon 3 kita gabungin dan hasil akhirnya adalah rata rata dari gabungan tadi dan prediksi kita itu bentuknya lucu yahhh, dan Decision tree yg kita bagging itu bahasa technikalnya adalah random forest yee ges yeee, yg tdnya pohon (tree) menjadi hutan acak(random forest) karena kita bootsrap beberapa pohon dan ammbil rata ratanya. oiya dan bagging ini termasuk ensemble learning yaa gays yaa dan nanti ini akan kita bahas di materi algoritma XGboost</p>
+        <div class="image">
+            <img src="images/bg.png" alt="">
+            <img src="images/bg2.png" alt="">
+        </div>
+        <p class="text2">Max features</p>
+        <div class="image">
+            <img src="images/mt.png" alt="">
+        </div>
+        <p class="text3">Oke clear yaa decision tree dan random forest penjelasanya, oke kita akan masuk ke parameter ke 3, jadi gini pada kenyataanya features(fitur) kita itu kan banyak yaa kalo dan decision tree akan ngambil masing masing best decision di tiap tiap fitur kan yaaa, tapi kalo fitur kita itu 30 maybe biarpun mesin itu komputasinya cepet tapi kalo banyak lumayan juga kan yaa, nah maka dr itu ada parameter ke 3 ini yg namanya max features, jadi ideanya adalah ada baiknya kita cuma ngambil beberapa fitur doang untuk nyari best decison.karena apa kalo kita ngambil best decison di masing masing fitur akan overfitt kan ya bahkan akurasi kita itu bisa 100%, jadi misal kita ada 30 fitur dan yg kita cek dan ambil best decisionya itu cuma 9 maybe dan baru cabang tapi gapapa udh komputasinya lebih ringan komputasinya lebih cepat dan knapa ngga? </p>
+        <br>
+        <p class="text3">Oke misal kita punya 4 fitur di gambar atas ini dan kita hanya mengambil 50%nya aja secara acak dan ambil best decisionya, mau cabang lagi random lagi acak lagi 50% dan bisa jadi tiap cabang itu beda fitur yaaa liat aja pada gambar, dan cara milih 50%nya random aja dan kita kontrol pake random state, makanya namanya random forest ya udh acak didatanya, acak dipohonya makanya namanya random forest yaa.hutan yg random banget </p>
+        <br>
+        <p class="text3">sebenarnya ada satu lagi sih parameter namanya an_estimators kalo gasalah ya cuma gadijelasin dipidionya cuma ya kita paham gt tree itu pohon mau ada berapa pohon gt intinya, jadi jumlah parameternya ada 4</p>
+        <p class="text3">dan ini adalah hyper parameter tuning yg biasa dipakai pada random forest :</p>
+        <br>
+        <p class="text3">{'prep__numeric__poly__degree': [1, 2, 3],</p>
+        <p class="text3"> 'prep__numeric__poly__interaction_only': [True, False],</p>
+        <p class="text3"> 'algo__n_estimators': [100, 150, 200],</p>
+        <p class="text3"> 'algo__max_depth': [20, 50, 80],</p>
+        <p class="text3"> 'algo__max_features': [0.3, 0.6, 0.8],</p>
+        <p class="text3"> 'algo__min_samples_leaf': [1, 5, 10]}</p>
+        <br>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>

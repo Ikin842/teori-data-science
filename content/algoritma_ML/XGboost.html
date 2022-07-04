@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">XGBoost</span>
+                    <span class="profession">with scikit learn</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="image">
+            <img src="images/xgb0.png" alt="">
+        </div>
+        <div class="text2">XGBoost<br></div>
+        <p class="text3">XGboost adalah implementasi lanjutan dari algoritma peningkatan gradien (Gradient Boosting). XGboost menggunakan prinsip ensemble yaitu menggabungkan beberapa set pembelajar (tree) yang lemah menjadi sebuah model yang kuat sehinga menghasilkan prediksi yang kuat, oke sebelum  masuk ke XGBoost kita akan mempelajari dulu yg namanya ensemble learning</p>
+        <br>
+        <p class="text3">ensemble learning merupakan suatu metode algoritma yang cara trainingnya itu berbarengan dan bersamaan sama kaya random forest, XGBoost juga termasuk algoritma yg menggunakan metode ensemble learning</p>
+        <br><br><br><br>
+       
+        <div class="text2">ensemble learning<br></div>
+        <p class="text3">ensemble learning merupakan suatu metode algoritma yang cara trainingnya itu berbarengan dan bersamaan sama kaya random forest, XGBoost juga termasuk algoritma yg menggunakan metode ensemble learning</p>
+        <p class="text3">oke bisa kita lihat perbedaan dari boosting dan bagging, kalo boosting itu menguatkan yg lemah sedangkan bagging melemahkan yg kuat, dan dibawah juga kita bisa liat perbedaan boosting dan bagging dengan jelas, kalo boosting kombinasi training dan jadilah hasil akhir, tapi kalo bagging itu rata rata dari pohon yg overfitt</p>
+        <br>
+        <div class="image">
+            <img src="images/xgb.png" alt="">
+        </div><br><br><br>
+        <p class="text3">bad learner       : lebih jelek dari rata rata</p>
+        <p class="text3">coin toss learner : prediksi sama dengan rata rata</p>
+        <p class="text3">week learner      : aga mending dibandingkan rata rata</p>
+        <p class="text3">good learner      : nice prediction dan itu yg kita mau</p>
+        <p class="text3">strong learner    : overfitt prediction</p>
+        <div class="image">
+            <img src="images/xgb2.png" alt="">
+            <img src="images/xgb3.png" alt="">
+        </div><br><br><br><br><br><br>
+        <div class="image">
+            <img src="images/ad.png" alt="">
+        </div>
+        <div class="text2">Adaptive boosting</div>
+        <p class="text3">AdaBoost, kependekan dari Adaptive Boosting, adalah meta-algoritme klasifikasi statistik yang dirumuskan oleh Yoav Freund dan Robert Schapire, yang memenangkan Hadiah Gödel 2003 untuk pekerjaan mereka. Ini dapat digunakan bersama dengan banyak jenis algoritma pembelajaran lainnya untuk meningkatkan kinerja</p>
+        <br>
+        <p class="text3">oke jadi disini saya akan menjelaskan idea dr adaptive boosting, jadi idea dr adaptive boosting itu adalah "belajar dari kesalahan" anjayy keren banget kan, oke untuk lebih clearnya kita bisa liat gambar yg dikanan ini, pakailah week learner training, yaudah kita traning aja, kita anggep merah itu cowo dan biru itu cewe, training pertamaa masih banyak yg melest yaa bisa liat aja dr illustrasi dibawah, yudh tahap selanjutnya boosting semua yg masih gagal gagal ini kita bobotin lebih kuat dan jadikan data set selanjutnya, jadi mempelajari ksalahanya dan jadiin kesalahan itu sebagai target training selanjutnya, yg masih gagal ini dibobotin lebih kuat hingga prediksi kita akan lebih ke yg td gagal, tp akibatnya yg td bener jd salah, dan kita akan ulang ulang seperti td prediksinya jelek bobotin jadiin dataset training ganti lg dan kita akan gabungkan semua model menjadi satu sampe prediksi kita itu good learner, mungkin sekian aja penjelasan adaptive boosting yg penting kita paham lagian kedepanya gabakal kita pake juga yg kita pake gradient boosting</p>
+        <br>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="image">
+            <img src="images/gb1.png" alt="">
+        </div>
+        <div class="text2">Gradient boosting</div>
+        <p class="text3">Oke jadi kita masuk ke gradient boosting, oke kita bedah dulu idea dr gradient boosting, idea dr gradient boosting adalah seperti olahraga golf, pukul bola golf ke lubang yg harus dimasuki.itukan galangsung masuk yah gamungkin gt bisa langsung masuk yah yaudah kita pukul bola golfnya sedikit demi sedikit agar bisa masuk ke lubang golfnya kalopun nanti kelewatan yaaa pukul lagi sampai masuk ke lubang yg kita tuju</p>
+        <div class="image">
+            <img src="images/gb2.png" alt="">
+        </div><br><br><br><br><br><br>
+        <p class="text3">dan untuk dibalik layar kurang lebih kaya gini jadi dia akan ngeplot kesalahanya satu persatu dan dia akan training pada kesalahan itu, kurang bagus lagi plot lagi training lg pada data yg jelek truss aja gitu sampe nanti kita dapet prediksi yg bagus dan hasil akhirnya kurang lebih kaya gambar dibawah</p>
+        <img src="images/bg3.png" alt="">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="image">
+            <img src="images/lr.png" alt="">
+        </div>
+        <div class="text2">learning rate</div>
+        <p class="text3">learning rate, kalo learning rate di gradient boosting itu berbeda dengan learning rate di adaptive boosting, kalo learning rate di gradient boosting itu berapa persen dr fitted residual(p1) yg mau kita tambahin ke ensemble prediction, kalo learning ratenya 0 yaudah = 0 gabelajar, biasanya yg kita mau 0 sampai 1 kalo learning kegedean 2 maybe itu akan ngaco, dan udh gausah dipikrin nanti kita akan tunning</p>
+        <br>
+        <p class="text3">jadi apa itu xgboost???xgboost itu sebenernya singkatan dari Extream gradient boosting, pada dasarnya adalah algo gradient boosting cuma diimprove lagui supaya komputasinya semakin cepet dan temuin teknik teknik untuk ngehandle overfit, dan ini ditemukan oleh orang cina yg namanya : Tianqi Chen dan Carlos Guestrin dia buat gradient boosting yg bisa dikomputasi parallel dan bisa pake GPU.oke mungkin sekian aja penjelasan mengenai algoritma XGBoost</p>
+        <P class="text3">parameter XGboost sebenrnya banyak banget cuma dikasih sm pa wira sebagian doang tapi yaudah gapapa.jadi ini adalah hyper parameter tuning yg biasa digunakan XGBoost :</P>
+        <br>
+        <p class="text3">{'prep__numeric__poly__degree': [1, 2, 3],</p>
+        <p class="text3">'prep__numeric__poly__interaction_only': [True, False],</p>
+        <p class="text3">'algo__max_depth': [3, 6, 10],</p>
+        <p class="text3">'algo__colsample_bytree': [0.4, 0.6, 0.8],</p>
+        <p class="text3">'algo__n_estimators': [100, 150, 200],</p>
+        <p class="text3">'algo__subsample': [0.4, 0.6, 0.8],</p>
+        <p class="text3">'algo__gamma': [1, 5, 10],</p>
+        <p class="text3">'algo__learning_rate': [0.01, 0.1, 1],</p>
+        <p class="text3">'algo__reg_alpha': [0.01, 0.1, 10],</p>
+        <p class="text3">'algo__reg_lambda': [0.01, 0.1, 10]}</p>
+        <br><br><br><br><br><br><br><br>
+        
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>

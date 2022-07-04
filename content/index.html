@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Machine learning</span>
+                    <span class="profession">with scikit learn</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Machine learning</div>
+        
+        <div class="image">
+            <img src="img/ml.png" alt="">
+        </div>
+        <br><br><br>
+        <p>Machine learning merupakan cabang dari kecerdasan buatan, adalah disiplin ilmu yang mencakup perancangan dan pengembangan algoritme yang memungkinkan komputer untuk mengembangkan perilaku berdasarkan data empiris, seperti dari sensor data basis data.Pembelajaran mesin (Machine Learning) adalah pendekatan kecerdasan buatan (Artificial Intelligence (AI)) yang berfokus pada pembuatan mesin yang dapat belajar tanpa diprogram secara eksplisit.</p>
+        <br>
+        <p>itukan definisi dari google, kalo dari saya machine learning adalah sebuah disiplin ilmu yang mengandalkan data untuk belajar dan menggunakan banyak teknik algoritma, makanya namanya machine learning(pembelajaran machine) jadi machine(software) kita itu mempelajari data menggunakan beberapa teknik algoritma yang harapanya akan menemukam insight dari data yang kita pelajari, dan kita bisa melakukan banyak hal hanya dengan insight data tersebut, seperti regresi, klasifikasi, clustering dan lain lain.Contoh nyata diindustri prediksi harga saham, klasifikasi penyakit dll</p>
+        <br>
+        <br>
+        <div class="text2">Algoritma Machine learning</div>
+        <p class="text3">Algoritma merupakan sekumpulan instruksi yang terstruktur dan terbatas yang diimplementasikan kedalam bentuk program komputer untuk menyelesaikan suatu masalah komputasi tertentu. Dalam matematika dan ilmu komputer, algoritme adalah prosedur langkah-demi-langkah untuk penghitungan.Untuk melakulan learning pd data kita atau istilahnya itu training kita memerlukan algoritma machine learning, disini saya akan membagikan beberapa algoritma terkenal pada machine learning</p>
+        <br>
+        <div class="text2">1. KNN (K-Nearest neighbors)</div>
+        <p class="text3">KNN adalah sebuah algoritma pada machine learning yang paling sederhana.karena algoritma ini hanya mengandalkan tetangga terdekat.haaaahhh makssudnya gimana tuh?oke jadi gini misal kita mau ngekelasifikasiin apakah dia cewe atau cowo.nah kalo make algoritma KNN itu sesimpel kita melihat data kita itu tetangga paling dekatnya cowo atau cewe.kalo paling dekatnya cowo yaudah knn akan anggap itu sebagai cowo.gt yaa gays ya.selain menggunakan tetangga terdekat sebagai acuan untuk prediksi KNN juga mempertimbangkan distance(jarak) sebagai prediksi, diantaranya euclidean distance, manhattan distance dan chebisev distance.parameter tuning yg biasa digunakan untuk tuning : <a href="algoritma_ML/knn.html">klik disini untuk belajar lebih lanjut tentang algoritma KNN</a></p>
+        <br>
+        <br>
+        <div class="text2">2. SVM (Suport Vector Machine)</div>
+        <p class="text3">suport vector machine  merupakan suatu teknik  untuk menemukan hyperplane yang bisa memisahkan dua set data dari dua kelas yang berbeda.jadi bahasa gampangnya gini svm adalah algoritma untuk menemukan jalan raya terlebar diantara dua data.SVM dulunya dikenal sebagai maximum margin classifier. Ternyata alternatif untuk memperoleh maximum margin adalah dengan mencari support vector (data yang dilingkari). Itulah mengapa nama algoritma ini juga disebut sebagai Support Vector Machine, yakni mesin pencari support vector.parameter svm hanya ada dua : penalty parameter (c) dan gama, <a href="algoritma_ML/svm.html">klik disini untuk belajar lebih lanjut tentang algoritma SVM</a></p>
+        <br>
+        <div class="text2">3. Random Forest</div>
+        <p class="text3">Random forest  adalah kombinasi dari  masing – masing tree yang baik kemudian dikombinasikan  ke dalam satu model. Random Forest bergantung pada sebuah nilai vector random dengan distribusi yang sama pada semua pohon yang masing masing decision tree memiliki kedalaman yang maksimal. Random forest adalah classifier yang terdiri dari classifier yang berbentuk pohon {h(x, θ k ), k = 1, . . .} dimana θk adalah random vector yang diditribusikan secara independen dan masing masing tree pada sebuah unit kan memilih class yang paling popular pada input x. Berikut ini karakteristik akurasi pada random forest.itu kalo dr google dan sangat susah dimengerti</p>
+        <br>
+        <p class="text3">Random forest merupakan bahasa tekhnikal dari decision tree yang dibagging.gampangnya bahsa kerenya itu random forest.oke kita bahas satu satu.jadi apa itu decision tree.kalo menurut wikipedia decision tree adalah mengubah data menjadi aturan aturan keputusan.itu kalo dr wikped.hmmmm sangat susah untuk digambarkan yaa everybody.jadi gini misal kita punya datanya likak likuk bgt itu kalo dipoli mungkin bisa memprediksi dengan baik.tapi kalo datanya itu udah aneh bgt gt make poly sangat ga worth it syekalii.jadi kita harus memakai random forest.<a href="algoritma_ML/RF.html">lklik disini untuk mempelajari lebih lanjut tentang random forest</a> karena materinya akan lumayan.
+        <br>
+        <div class="text2">4. XGBoost</div>
+        <p class="text3">XGBoost merupakan algoritma yg sangat populer di kalangan pengguna machine learning.oke sebelum masuk ke XGBoost, disni saya akan memperkenalkan dulu yg namanya boosting, boosting itu sbnrnya ada banyak disini saya hanya akan mengenalkan dua jenis boosting aja.</p>
+        <br>
+        <p class="text3">Gradient boosting</p>
+        <p class="text3">XGboost adalah implementasi lanjutan dari algoritma peningkatan gradien (Gradient Boosting). XGboost menggunakan prinsip ensemble yaitu menggabungkan beberapa set pembelajar (tree) yang lemah menjadi sebuah model yang kuat sehinga menghasilkan prediksi yang kuat<a href="algoritma_ML/XGboost.html">klik disini untuk mempelajari lebih lanjut algoritma XGBoost</a> </p>
+        <br>
+        <div class="text2">5. Linear Regression</div>
+        <p class="text3">oke jadi kali ini kita akan membahas algoritma Regresi linear, oke jadi kalian pasti bertanya tanya kan kenapa Linear regresi yg cum garis lurus doang dibahas terakahiran, pada artikel lain akan dibahas diawal, oke jadi gini, karena kita mau masuk dan mempelajari tentang deep learning.haaahhh?gimana gimana?iyaa karena konsep dasar dr deep learning adalah regresi linear.jadi konsep dari deep learning sendiri dari hal yang sederhana.oke pada artikel kali ini juga saya ingin memperkenalkan yg namanya gradient descent.tapi mungkin itu akan saya bahas pada halaman lain karena materinya sangat panjang.<a href="algoritma_ML/LR.html">klik disini untuk mempelajari lebih lanjut algoritma linear Regression</a> </p>
+        <br>
+        <p class="text3">{'algo__fit_intercept': [True, False]}</p>
+        <br>
+        <div class="text2">6. ElasticNet</div>
+        <p class="text3">oke jadi sebelum ke ElasticNet kita bahas dulu apa itu Regularization</p>
+        <p class="text3">oke kita bayanginya gini aja Regularization adalah sebuah panishment(hukuman), jadi ideanya gini, gimana kalo kita overfitkan aja dulu, lalu kita kasih Regularization td tujuanya supaya yg tdnya sangat overfitt kalo kita kasih Regularization dia tidak overfitt, Regularization itu ada 2, yg pertama adalah L1/Lasso/Sparcity dan yg kedua ada L2/Ridge/simplicity, oke jadi perbedaan dr mereka berdua adalah, L1 panishmentnya lebih sakit, sedangkan L2 lebih pelan.dan keuntungan membalancekan koefisien yg tidak balance akibat poly yg tinggi, untuk tuning parameter l1 biasanya nama lainya L1_ratio dan l2 namanya adalah alpha/algo__alpha</p>
+        <p class="text3">jadi mana yg lebih baik??? pake l1 atau l2 ?? jawabanya kenapa gadua duanya.oke jadi elasticnet itu apa?elastic net adalah gabungan dr l1 dan l2 yaa gays ya.jadi pada formula matematiknya kita mau bobotin berapa untuk l1 dan berapa untuk l2 yaa gays ya</p>
+        <br>
+        <p class="text3">{'prep__numeric__poly__degree': [1, 2, 3],</p>
+        <p class="text3"> 'prep__numeric__poly__interaction_only': [True, False],</p>
+        <p class="text3"> 'algo__fit_intercept': [True, False],</p>
+        <p class="text3"> 'algo__alpha': array([1.e-03, 1.e-02, 1.e-01, 1.e+00, 1.e+01, 1.e+02]),</p>
+        <p class="text3"> 'algo__l1_ratio': [0, 0.25, 0.5, 0.75, 1]}</p>
+        <br>
+        <div class="text2">7. Logistic Regression</div>
+        <p class="text3">Logistic Regression merupakan sebuah algoritma dimachine learning yg memanfaatkan regresi untuk klasifikasi.Kalo kita punya data set klasifikasi cewe dan cowo 0 1.gimna kalo udh punya solusi regresi dan bisa melakukan problem apa aja tgal ganti fungsinya supaya klasifikasi diselesaikan dengan regresi.teenyata ada
+        Ada fungsi yg bentuknya tangga supaya klasifikasi diselesaikan dg regresi ternyaya ada yg namanya sigmoid itu fungsi yg bentuknya huruf s yg rentangnya itu 0 sampai 1.jadi sebenarnya kita bisa menggunakan regresi untuk klasifikasi dengan cara mengganti fungsiya dengan fungsi yg tepat untuk model kita.let say org matematik udah nemu satu fungsi yg bisa digunakan untuk klasifikasi dan namanya adalah fungsi sigmoid.jd cara kerjanya adalah kita akan suruh optimizer mencari loss dan acuan loss kita kali ini menggunakan MCE(mean cross entropy)bukan lg MSE</p>
+        <br>
+        <p class="text3">{'algo__fit_intercept': [True, False],</p>
+        <p class="text3">'algo__C': array([1.e-03, 1.e-02, 1.e-01, 1.e+00, 1.e+01, 1.e+02, 1.e+03])}</p>
+        <br><br><br>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>

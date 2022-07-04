@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Linear Regression</span>
+                    <span class="profession">with scikit learn</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        
+        <div class="image">
+            <img src="images/rl.png" alt="">
+        </div>
+        <br>
+        <div class="text2">Linear Regression</div>
+        <p class="text3">regresi linear sebenarnya algoritma yg sangat simple karena cuma tarik garis lurus aja, tapi idea yg simple ini akan amat sangat kepake dideep learning dan kita akan membahasnya dengan detail, sebelum ke regresi linear kita harus tau dulu persamaan garis lurus dimana rumusnya adalah "y = ax +b" atau "y = mx +c" sama aja pada intinya, dimana : <br><br>a = slope(kemiringan) <br> b = bias(meleset)/titik potong<br><br> Artinya apa : kalo b.nya kita tambah akan geser atas bawah Kalo a.nya kita tambah akan makin tegak dan makin datar, kita sebagai manusia kan dengan gampangnya yah ngeprediksi data cuma geser a sm bnya doang untuk ngeprediksi itu, tapi pertanyaanya can automate this procces for machine, jawabanya bisa</p>
+        
+        </p>
+       <br><br><br><br><br>
+        <div class="image">
+            <img src="images/lc.png" alt="">
+        </div>
+        <div class="text2">Concept 1: Define Loss</div>
+        <br>
+        <p class="text3">karena kita butuh suatu angka yg merepresentasikan kesalahan, dan pada gradient decsent menggunakan MSE, sebenarnya ini gaditerangin sm pa wira karena tidak terekam tapi pada intinya itu cuma mengandalkan kemiringan doang / a nya saja untuk ngeprediksi data tsb</p>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="image">
+            <img src="images/lp.png" alt="">
+        </div>
+        <div class="text2">Optimizer</div>
+        <p class="text3">Problem 2 Bagaimana kalo kita punya problem yg mengharuskan kita menggeser a dan b nya untuk mendapat error terkcil kan ya tapi sekarang 2dimensi dan dibalik layar kurva los td ganti menjadi loss plane<br></p>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="image">
+            <img src="images/lp2.png" alt="">
+        </div>
+        <div class="text2">Optimizer</div>
+        <p class="text3">Oke kita akan menyuruh mesin untuk mencari loss paling kecil yaa.dr sisi a bentuknya parabola dan dr sisi b bentuknya parabola jg hasilnya jd mangkuk.nah kita mau mencari dasar dr mangkuk itu yah.pada plot 2dimensi kn ada keterangan angkanya.yudh kita coba pakai titik korrdinat dr dasar mangkuk tsb, Ksalahanya itu kliatan dr bentuk pola lossnya.mesin itu udh ada acuanya yaa yaitu loss, nah itulah teknik yg disebut "optimizer".Optimizer akan secara otomatis mencari dasar dr mangkuk dan kalo udh Nemu mangkuknya a sm b.nya dapet yah<br><br>secara umum optimizer ada 2:<br>- Gradient based optimizer(memanfaatkan kemiringan)<br> 1. Gradient Descent, Ideanya dr gradient decsent(menuruni bukit) jadi kan bentuknya kaya magkok gt kan yudh kita cari yg curam lalu tgal turunin lembahnya lama lama sampai dibawah<br>
+            - Non Gradient Based optimizer(tidak memanfaatkan kemiringan)<br>Contohnya adalah Bayesian serch yahh itu kan tidak memanfaatkan kemiringan.dia gacoba kmiringan ya Dia hanya cba Dsni bagus ngga ganti lg dan lama lama probabilitynya akan Nemu sndri yah dasar dr mangkuknya dimana
+        </p><br><br><br><br>
+        <div class="image">
+            <img src="images/lr1.png" alt="">
+        </div>
+        <div class="text2">learning rate</div>
+        <p class="text3">learning rate itu untuk nge tuning si optimizer Gradient discent kita.mksdnya apa yaa mksdnya kita mau ngecek dilangkah keberapa dia akan ngecek kemiringanya sampe Nemu yg paling bawah, gunain learning rate jangan terlalu kecil dan jangan terlalu besar juga, karena kalo terlalu kecil learningnya lama gaakan sampe sampe, kalo terlalu besar akan meledak kesana kemari</p>
+        <img src="images/lr2.png" alt="">
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>

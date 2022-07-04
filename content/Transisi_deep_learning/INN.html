@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Deep learning</span>
+                    <span class="profession">Neural Network</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        
+        <div class="image">
+            <img src="images/dl.png" alt="">
+        </div>
+        <br>
+        <div class="text2">Deep learning</div>
+        <p class="text3">oke jadi kita akan masuk ke deep learning, jadi apasi itu deep learning??Apa yg dimaksud dengan deep learning?Deep learning merupakan subbidang machine learning yang algoritmanya terinspirasi dari struktur otak manusia. Struktur tersebut dinamakan Artificial Neural Networks atau disingkat ANN. Pada dasarnya, ia merupakan jaringan saraf yang memiliki tiga atau lebih lapisan ANN.</p>
+        <br>
+        <p class="text3">perbedaan machine learning dan deep learning bisa kita liat dr gambar di kanan.oke jadi intinya gini kalo ML itu fetaure extraction enginering dll itu dilakukan oleh manusia, sedangkan DL itu kita cuma ngasih data lalu serahkan semuanya ke mesin kurang lebih begitu gambaranya gini, kita ngasih data biar mesin yg akan memanage fitur fiturnya, yg mana DL ini menggunakan neural Network, yg dimana Neural Network ini akan melakukan kombinasi fitur dan menghasilkan fitur baru, oke mungkin lebih jelasnya kita lanjut ke materi Neural Network</p>
+       <br>
+        <div class="image">
+            <img src="images/nn1.png" alt="">
+            <!-- <img src="images/nn2.png" alt=""> -->
+        </div>
+        <div class="text2">Neural Network</div>
+        <p class="text3">Neural Network merupakan kategori ilmu Soft Computing. Neural Network sebenarnya mengadopsi dari kemampuan otak manusia yang mampu memberikan stimulasi/rangsangan, melakukan proses, dan memberikan output. Output diperoleh dari variasi stimulasi dan proses yang terjadi di dalam otak manusia.Jaringan saraf adalah jaringan atau sirkuit neuron biologis, atau, dalam pengertian modern, jaringan saraf tiruan, terdiri dari neuron atau node buatan<br>Kombinasi linear hanya terdiri dr perkalian skalar dan penjumlahan skalar, jadi mengkombinasikan sesuatu, sesuatunya itu apa kita punya 3 fitur kan ya (x1, x2, x3), mau digabung menjadi satu, gabungnya tgal kasih bobot truss jumlahin semua, sehingga kalo misal mau enak dilihat kita biasa direpresentasikan jadi represantasi node seperti gambar dikanan</p>
+        <p class="text3">oke jadi dikanan ini merupakan gambaran dari Neural Network, oke sebelumnya kita bedah satu satu dulu</p>
+        <br>
+        <div class="image">
+            <img src="images/nn2.png" alt="">
+        </div>
+        <p class="text3">- y = ax1 + bx2 + cx3 = formula linear regression -> kombinasi antar fitur -> Neural Network</p>
+        <p class="text3">- yg bulet bulet itu namanya representasi node / node
+        <p class="text3">- y merupakan fungsi aktivasi dr apa yg mau kita kombinasikan, biasanya ada softmax, tanha, relu dll</p>
+        <p class="text3">- cara mencari a dan b nya itu menggunakan teknologi yg namanya optimizer dan yg sering kita pakai adalha gradient descent</p>
+        <p class="text3">- kita punya fitur x1, x2, dan x3 kita kombinasi linear sehingga melahirkan fitur let say kita namain z1, lalu kita kombinasi linear lg baru deh kita training
+        <p class="text3">- dari sebuah fitur diubah menjadi fitur yg lain</p>
+        <p class="text3">- neural netwrok ideanya sesimple regresi dr regresi</p>
+        <p class="text3">- kalo dideep learning biasa disebut feature extraction</p>
+        <p class="text3">- gambar dibawah biasa disebut arsitektur</p>
+        </p>
+        <p class="text3">- jadi saraf menerima informasi dr deandrit truss dikombinasi ke satu tempat, baru disambungin lg informasinya ke selanjutnya</p>
+        <p class="text3">- dimatematik jaman dulu bgt neural network disebut perceptron</p>
+        <p class="text3">- Multi layer perceptron(MLP) = multi layer beberapa lapis </p>
+        <p class="text3">- activasi hiden layer tidak boleh linear/identitas karena ujungnya akan ke y = ax + b</p>
+        <div class="image">
+            <img src="images/nn3.png" alt="">
+            <img src="images/nn4.png" alt="">
+            <img src="images/nn5.png" alt="">
+        </div>
+        <div class="image">
+            <img src="images/nn6.png" alt="">
+        </div>
+        <div class="text2">Neural Network playground</div>
+        <p class="text3">  oke dibawah sini saya punya sigmoid fitur dengan garis horizontal dan vertikal dan kita ingin memprediksi data yg ada disebelah, yaudah kita tinggal train aja dan optimizer akan nemuin angka yg pas untuk model kita dan prediksi kita akan sesuai dengan yg kita harapkan, kalo kita mau tau a dan b nya berapa tinggal klik aja disarafnya.dan sebenernya ini hanyalah logistic regresion biasa karena gaada hiden layernya</p>
+        <br><br><br><br>
+        <div class="text2">Neural Network playground 2</div>
+        <p class="text3">oke yaa gays yaa jadi kita punya problem baru datanya itu kaya dikasus svm, tapi kali ini kita make NN.oke jadi kita punya 2 features yg dikombinasikan menjadi features pd hidden layer dan kita butuh 3 neuron untuk memprediksi data kita, dan 3 neuron itu kita kombinasikan dan suruh optimizer memenukan loss terkecil dan taraaaa, kita berhasil yaa gays yaaa.oke gimana kalo neuron kita itu cuma 2....jawabanya underfit dan hanya akan menghasilkan prediksi yg ngaco..ingat bias variance trade off bias rendah -> underfitt -> kurang variance, oke jadi kenapa kita mainan ini?supaya tau dibalik layar neural network tu ngapain.ini untuk gambar yg kanan yaa gays yaaa</p><br>
+        <p class="text3">oke jadi disini kita punya 2 hidden layer dengan masing masing hidden layernya terdiri dr 5 neuron, dan pd kasus yg sama.dan hasilnya bagus banget, makanya neural network sering disebut Universal aproximater, walaupun gauniversal banget. brarti neural network ini banyak jawaban.kita pake neuron 3 it works neuron 5 works juga, dan nextnya kita akan belajar menentukan mau pake berapa neuron dan layernya. dan ini untuk gambar yg kiri</p>
+        <div class="image">
+            <img src="images/nn7.png" alt="">
+            <img src="images/nn8.png" alt="">
+        </div>
+        <div class="text2">Macam macam arsitektur Neural Network</div>
+        <p class="text3">1. Think wide</p>
+        <p class="text3">think wide ideanya adalah diawal layernya 1 doang atau 2 tp neuronya dibanyakin, kenapa kaya gt?karena harapanya neuron yg banyak kombinasi akan banyak dan harapanya sudah cukup kompleks, makanya kita balik lg ke bias variance trade off, kombinasinya banyak = variasinya tinggi = makin likak likuk</p>
+        <br>
+        <p class="text3">1. Think Deep</p>
+        <p class="text3">kalo think deep itu hidden layernya yg dibanyakin dan logikanya makin lama makin kecil hidden layernya karena logikanya semakin belakang fitur semakin kompleks dan tidak butuh neuron terlalu banyak, dan ada yg sebaliknya fiturnya dikit banyakin kombinasinya/variasinya</p>
+        <br>
+       <div class="image">
+            <img src="images/nn9.png" alt="">
+            <img src="images/nn10.png" alt="">
+        </div>
+
+        <div class="image">
+            <img src="images/nn11.png" alt="">
+        </div>
+        <p class="text2"> Good input feature => helps neural network a lot</p>
+        <p class="text3">ini adalah kemampuan matematika modeling yaa gays yaaa, oleh karena itu deeplearning sangat booming karena memindahkan ilmu org yg phd ke org biasa dalam kemampuan modelling, dan untuk menebak model dibawah itu seorang matematikawan harus memiliki ilmu yg mumpuni , kedepanya kita akan pake think deep</p><br>
+        <p class="text3"> === penentuan jumlah neuron ===<br>- n_neuron = 2^n(pangkat 2)
+        <p class="text3">- misal kita bisa pake = 4, 8, 16, 32, 64, 128
+        <p class="text3">- kenapa kita pake pangkat 2 karena scallingnya gampang
+        <p class="text3">- underfitt kita kali 2
+        <p class="text3">- overfitt kita bagi 2
+        <p class="text3">di neural network kita galakukan gridserch, sehingga rulesnya adalah kita pake rul of tank seperti diatas
+        <p class="text3">klo pake gpu kalo pangkat 2 kita ada kecepatan tambahan, sehingga ada benefit sedikit dr sisi hardware.oke kita udh belajar apa itu neural network sekarang kita akan ke alur neural network tu gimana sih</p>
+        <br><br><br><br>
+        <div class="image">
+            <img src="images/nn12.png" alt="">
+        </div><br>
+        <p class="text2">Feedforward, backpropagation dan Minibatch</p>
+        <p class="text3">oke jadi kita akan mempelajari apasih dibalik neural network playground yg udh kita mainin.kenapa weightnya bisa berubah gt, walau kita tau weightsnya akan dicari otomastis oleh optimizer tp ada baiknya kita mengetahui dibalik layar dia ngelakuin apa</p>
+        <br>
+        <p class="text3">oke kita bedah satu satu dlu.jadi gini, kalo kita ngomongin regresi itu kan formulanya banyak bisa softmax, sinus bahkan dll.tapi kalo kita ngomongin linear regresion maka formula prediksi kita y = ax + b baru dr formula ini kita kan gatau ya a sm b nya berapa yaudah kita random dlu tebak aja dlu, karena kita udh tebakan nh brarti kita kan bisa hitung prediksi kita nih walaupun ngaco.dr hasil prediksi ini kita bandingin hsil prediksi kita dengan data asli, kebetulan kalo regressi kita hitung pakai MSE(error dr antara data dan prediksi kita kuadratkan lalu di rata ratakan) dr error ini brarti kan nanti membentuk sebuah plan yaa eeee kalo diregresi linear kita udh tau bentuknya mangkuk, dan supaya kita menemukan dasar dr mangkuknya kita hitung gradientnya, jadinya kalo matematiknya yaa turunan dr cost terhadap apa yg mau kita cari a misal.</p><br>
+        <div class="image">
+            <img src="images/nn13.png" alt="">
+        </div>
+        <p class="text3">ini merupakan kalkulus yaa gaysss, tp ideanya sbnrnya yg dicari itu kemiringan dr cost itu, nextnya yg kita ngacak nebak a sm b kita harus jalan kmana supaya menuruni bukit dan nextnya kita update a sm b nya karna kita udh tau kemiringanya nah iulah yg namanya optimizer, atau lebih spesifik gradient based optimizer, kalo a sm bnya udh diperbaiki brarti kita udh ada prediksi yg baru yah, next kita hitung lg prediksi dan kita ulang ulang smpe prediksi kita itu bagus.jadi ini inti dr regressi formulanya terserah apapun yg penting ada yg parameter yg bis kita cari, formulanya itu tergantung kasusnya yaa gaysss yaaaaa, dan kalo diperhatikan itu kan ada garis warna merah bentuknya siklus gt muter muter itu adalah 1 epoch </p><br>
+        <p class="text3">Neural Network itu menggunakan ide yg persis sama cuma bedanya di formulanya aja, jadi perbedaan antara gambar atas sm bawah itu cuma diformulanya aja .kalo diatas itu kita ngomongin regresi linear biasa atau kita bisa menggunakan formula yg lain softmax maybee dan ideanya dibalik layar sama, dan itu pun berlaku untuk neural network pun brgitu yg membedakan hanya formula matematiknya saja dimana kita tau formula neural network itu y = ax + b didalam ax + b kurang lebih seprti itu tapi lebih panjang dan kompleks, dan kalo gambar atas itu kan nebak a sm b nya doang yaudah kalo neural network nebak semua weightnya/ bobot dr garis itu, next feed forward(nghitung prediksi kita), kenapa namanya feeed forward ? karena neural network gerakanya maju kedepan ya kurang lebih kaya gt, next hitung costnya = total error yg mana kalo regresi kita menggunakan MSE, next hitung gradient, hitung gradient ini kalo diperhatikan rumusnya adalah turunan cost terhadap semua yg kita cari w1, w2, ...wn kalo diregresi biasa ya turunan cost terhadap a dan b, dan kalo kita mau nyari itu gambarnya seperti mundur ke belakang, jadi kan kita udh dapet y(prediksi) kita nih dan kita bisa hitung costnya kan, setelah dapet cost kita mau cari turunanya terhadap semua weightsnya, dan itu merupakan turunan berantai, makanya namanya adalah backpropagation, ini merupakan cara cepat mencari gradient di neural network yaa gaysya karena dlu kita ngitung gradientnya pelan gt make looping, kalo ini backpropagation ngitungnya make aljabar linear, nah sekarang kita bisa hitung prediksi baru dan kita ulang ulang sampe menemukan prediksi terbaik ya gays yaa, ngodingnya kita bakal nglakuin kaya gini yaa gaysss yaa</p>
+        <div class="image">
+            <img src="images/mn1.png" alt="">
+        </div><br>
+        <p class="text2">Minibatch</p>
+        <p class="text3">- oke misal kita punya data 10.000 data
+        <p class="text3">- kita train test split menjadi data train 8000 dan data test 2000</p>
+        <p class="text3">- kita galangsng pake seluruh 80000 data itu</p>
+        <p class="text3">- let say kita batch_sizenya = 64</p>
+        <p class="text3">- jd kita trainingnya itu kecil kecil gt</p>
+        <p class="text3">- kita training di 64, 64 sampe 125 kali sampe akhirnya 8000</p><br><br><br><br><br>
+        <div class="image">
+            <img src="images/mn2.png" alt="">
+        </div><br>
+        <p class="text2">Minibatch</p>
+        <p class="text3">jadi kalo diminibatch dia akan training per 64 yaa dia akan feedforward & backprop itu dinamakan step 1 sampai 125 data baru dihitung 1 epoch</p>
+        <p class="text3">Kenapa kita melakukan minibatch ini??kita udh tau kan kalo kalo deep learning itu gradient descentnya kompleks bgt gt dengan mudah kita bisa terjebak di saddle point local minima dll, nah itu bahayanya sehingga solusinya adalah kita jangan sepenuhnya percaya sm kemiringan kita teruss caranya gimana?kalo kita pakai minibatch gradient descent kita itu berbeda karena pake minibatch akibatnya apa?brarti kan kita cuma pake 64 data secara acak brarti kita cuma hitung data cuma estimasi doang itnya bukan gradient beneran</p><br><br>
+        <p class="text2">Minibatch Gradient Descent</p>
+        <p class="text3">memperkirakan gradien hanya dengan sebagian data saja</p>
+
+        <p class="text3">Kelebihan:</p>
+        <p class="text3">- Training data secara kesulurahan itu berat (membutuhkan memory yang besar)</p>
+        <p class="text3">- menggunakan real gradien bisa terjebak di saddle point</p>
+        <p class="text3">- menggunakan minibatch ada sedikit efek regularization</p><br>
+
+        <p class="text3">Kekurangan:</p>
+        <p class="text3">- kalau batch_size terlalu kecil, maka estimasi gradien bisa jadi tidak reliable</p>
+        <p class="text3">- kalau batch_size = 1, namanya adalah stochastic gradient descent (SGD)        </p>
+
+
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
+

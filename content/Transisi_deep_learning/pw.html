@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">Deep learning</span>
+                    <span class="profession">Neural Network</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        
+        <br>
+        <div class="text2">pytorch workflow</div>
+        <p class="text3"> PyTorch was meant to be flexible
+        <br>
+        <p class="text3">- PyTorch workflow case standard</p>
+        <p class="text3">- 1. Siapkan Data set dan Data loader</p>
+        <p class="text3">- 2. Bangun Arsitektur</p>
+        <p class="text3">- 3. Persiapan Training -> MCO</p>
+        <p class="text3">- 4. Training Loop</p><br>
+        <p class="text3">oke untuk latihan pertama kita akan menggunakan data ngacak aja dr numpy yaa gays yaa, nexnya kita akan menggunakan deeplearning untuk data tabular dan data image</p>
+        <p class="text3">oke langsung gas aja</p>
+        <br><br>
+        <div class="image">
+            <img src="images/i1.png" alt="">
+        </div><br><br><br>
+        <div class="text2">Sample data</div>
+        <p class="text3">untuk sample data disini kita menggunakan numpy dimana np.random.rand akan mengenerate angka 500 baris dan 4 kolom untuk X, dan 500 baris dan 3 kolom untuk y</p><br><br>
+        <div class="image">
+            <img src="images/pw.png" alt="">
+        </div>
+        <div class="text2">Dataset dan Data loader</div>
+        <p class="text3">- jadi dipytorch ada barang yg namanya data loader</p>
+        <p class="text3">- dan tujuanya untuk menghasilkan minibatch tadi</p>
+        <p class="text3">- torch.FloatTensor itu konversi ke tensor yaa</p>
+        <p class="text3">- karena semua komputasi akan diolah dalam bentuk tensor</p>
+        <br>
+        <p class="text3">- trainset = untuk menjadikan data tensor kita itu dataset</p>
+        <p class="text3">- trainloader = untuk menghasilkan minibatch kita dimana kali ini kita menggunakan 32</p>
+        <p class="text3">- shuffle = mau dishuffle ngga, True = ya</p><br><br>
+        <div class="image">
+            <img src="images/pw2.png" alt="">
+        </div>
+        <div class="text2">Bangun arsitektur</div>
+        <p class="text3">- sesuatu yg berurutan istilahnya sequential</p>
+        <p class="text3">- kombinasi linear aktivasi menggunakan reLu</p>
+        <p class="text3">- nn.Linear = Kombinasi linear dengan 4 neuron ke 3 neuron</p>
+        <p class="text3">- nn.reLu = kombinasi linear menggunakan activasi ReLu</p>
+        <p class="text3">- ini dinamakan merancang arsitektur menggunakan kode</p>
+        <div class="image">
+            <img src="images/pw3.png" alt="">
+        </div><br><br><br><br>
+        <div class="text2">Training preparation</div>
+        <p class="text3">Training preparation ini terdiri dri 3 step</p>
+        <p class="text3">1. model</p>
+        <p class="text3">model merupakan arsitektur yg kita udh buat tadi, tgal assignment aja ke variabel model</p>
+        <div class="image">
+            <img src="images/c.png" alt="">
+        </div><br><br><br><br><br><br>
+        <p class="text3">2. Criterion</p>
+        <p class="text3">Criterion merupakan sebuah fungsi yg dipakai untuk menghitung loss</p><BR>
+        <p class="text3">- kalo diklasifikasi kita pakai MSE gradient descentnya gagal karena ada platou, sehingga kita mau menghindari itu sehingga diklasifikasi kita menggunakan yg nama MCE(mean cross entrophy)
+        <p class="text3">- MCE(mean cross entrophy) sebenarnya formula matematiknya adalah logsoftmax dikombinasikan NLL(negatif log likelihood)</p><BR>
+        <p class="text3">- jadi Criterion kan digunain buat ngehitung erro/loss yaa nah ini digunakan tergantung kasusnya apa in this case kita make sigmoid 0 1 (binary clf)</p>
+        <p class="text3">- kalo kasusnya multiclass dan aktivasi terkahir kita pake logsoftmax Criterionnya kita pake NLLLoss gt aja pkonya</p>
+        <p class="text3">- kalo kasusnya kita regresi yaa kita pake nn.MSELoss jadi tergantung bgt sama kasus kita</p>
+        <br>
+        <p class="text3">AdamW = Adaptive Momentum + weight decay, penjelasanya dibawah</p>
+        <p class="text3">inputnya dia minta apa?? dia minta tolong isi semua parameter neural network kita</p>
+        <p class="text3">sehingga kita bisa menggunakan (model.parameters) lr = bisa diatur tp kita pake default aja</p><br><br>
+        <div class="image">
+            <img src="images/gd.png" alt="">
+        </div>
+        <p class="text3">- oke jadi dideep learning kita gaakan pake gradient descent biasa untuk trainingnya karena gradient descent rentan terjebak diplatou addle point dkk</p>
+        <p class="text3">- sehingga di deep learning kita tidak pake optimizer basic lg tp kita akan memanfaatkan ide baru</p>
+        <p class="text3">- ideanya namanya adalah momentum, apa itu momentum??</p>
+        <p class="text3">- bayangin aja kaya jatohin bola dia itukan ada momentumnya kan yaa walaupun udh didasar dia akan kelewatan bisa jadi turun lg</p>
+        <p class="text3">- artinya apa?? kalo ada local minima dkk harapnya tembus dan bisa menemukan daerah yg dibawahnya lagi</p>
+        <p class="text3">- lagi lagi gaada jaminan kita dapet global minimum, dan kita sebenarnya gaperlu perlu bgt dapet global minimum, yg penting dpet yg lebih rendh jangan yg diatas atas</p>
+        <p class="text3">- tp kita gabakal pake momentum biasa kita akan pakai momentum dari momentum = Adaptive Momentum(Adam)</p>
+        <p class="text3">- tapi kita akan pakai adam biasa tp kita akan pakai yg namanya AdamW = Adaptive Momentum + weight decay</p>
+        <p class="text3">- bedanya apa AdamW ada tambahan L2 regularization jadi bisa mengurangi overfitt</p>
+        <p class="text3">- beberapa tahun terkahir memang orang lebih pilih Adam yaa default choice atau rule of thanknya</p>
+
+        
+        
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
+

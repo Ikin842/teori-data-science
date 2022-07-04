@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">SVM</span>
+                    <span class="profession">with scikit learn</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        
+        <div class="image">
+            <img src="images/svm.png" alt="">
+        </div>
+        <br>
+        <div class="text2">SVM (Suport Vector Machine)</div>
+        <p class="text3">suport vector machine  merupakan suatu teknik  untuk menemukan hyperplane yang bisa memisahkan dua set data dari dua kelas yang berbeda.jadi bahasa gampangnya gini svm adalah algoritma untuk menemukan jalan raya terlebar diantara dua data.SVM dulunya dikenal sebagai maximum margin classifier. Ternyata alternatif untuk memperoleh maximum margin adalah dengan mencari support vector (data yang dilingkari). Itulah mengapa nama algoritma ini juga disebut sebagai Support Vector Machine, yakni mesin pencari support vector.parameter svm hanya ada dua : penalty parameter (c) dan gama</p>
+        <br>
+       <br><br><br><br><br><br><br><br>
+        <div class="image">
+            <img src="images/gama.png" alt="">
+        </div>
+        <div class="text2">Penalty parameter(c)</div>
+        <br>
+        <p class="text3">penalty parameter atau yg sering dilambangkan (c) adalah sebuah tuning svm yg memperbolehkan data kita masuk ke dalam jalan raya kita / margin kita, semakin besar (c)nya maka semakin sensitif, semakin kecil (c)nya akan semakin smooth</p>
+        <br>
+        <p class="text3">Ternyata penalty parameter saja tidak cukup untuk mengehandle semua kasus data, ada kalanya data kita itu sangat susah untuk mencari margin / jalan raya.
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="image">
+            <img src="images/kt.png" alt="">
+        </div>
+        <div class="text2">Solusi: kita butuh Perspektif baru -> Kernel Trick</div>
+        <p class="text3"> kita butuh perspektif baru(gama) yg bisa memisahkan data a dan b, Ide nya adalah kita melakukan transformasi data-data kita ke dimensi lain, Misalkan kita transformasi menggunakan persamaan distribusi Gaussian, Maka kita menyebutnya sebagai SVM menggunakan kernel Gaussian, Kernel Gaussian merupakan salah satu dari keluarga RBF (Radial Basis Function), jadi kita butuh perspektif baru, gimana tuchhh???oke sekarang kita perspektifnya diganti dikit kenapa harus 2 dimensi, kenapa ngga 3 dimensi, dan kalo kita kasih sebuah fungsi terserah fungsi apa tp most of the time nanti kita akan pakai fungsi yg bentuknya itu lonceng namanya fungsi Gaussian, kita akan kasih fungsi td dan bentuknya akan berubah seperti gambar dikanan ini, kalo udh seperti ini didunia 3 dimensi datanya kepisah, kalo datanya udh kepisah sekarang kita gaperlu lagi mencari jalan raya terlebar, tapi kita mau cari bidang yg memisahkan sejauh mungkin </p>
+        <BR>
+        <br><br><br></p>
+        
+        <div class="image">
+            <img src="images/rbf.png" alt="">
+        </div>
+        <div class="text2">Radial Basis Function</div>
+        <p class="text3">oke seperti yg udah kita lihat pd gambar kedua  yaaa, kalo kita pake linear itu sampe kapanpun gaakan nemu, tapi kita lihat dikanan ini kalo kita make RBF(radial basis function) itu akan nemu yahh</p>
+        <br>
+        <p class="text3">apasih RBF tuh??ini kalo mau gampang dipahaminya RBF ini sesuatu yg fungsinya itu bentuknya lingkaran, atau salah satunya yg paling gampang bentuknya adalah gunung, maka kita akan menggunakan gunung ini untuk misahin data data itu, dan yg keren ini hanya dimensi tiga kenyataanya SVM ini bisa sampe dimensi tak hingga, tapi trick keduanya adalah kita akan memberikan fungsi tranformasi supaya perspektifnya di 3 dimensi, 4 dimensi dsb, dari sana baru kita mencari bidang yg memisahkan mereka selebar mungkin baru deh kita kembalikan ke 2 dimensi, dan pada saat dikembalikan maka bentuknya akan lingkaran </p>
+        <br>
+        <p class="text3">Nahhh saking ini bergunanya ini kita sebutnya kernelize svm, svm yg dikasih kernel/svm yg dikasih fungsi tranformasi, tapi gara gara saking terkenalnya sekarang ketika orang nyebut SVM, yg dimaksud adalah ini si kernelize svm ini, tapi yg dulu org sebut svm sekarang biasa disebut dengan linear svm, dulunya svm itu yg garis lurus, tp ideanya tetap sama yaa gays yaaa, siip kita udh belajar toleran(c), kita juga udh belajar melihat dr berbagai perspektif, ternyata masih ada aja masalah, masalah yg ke 3 adalag SCALE(skala)</p>
+        <br><br>
+        <div class="image">
+            <img src="images/scale.png" alt="">
+        </div>
+        <div class="text2">Problem 3 : Scale</div>
+        <p class="text3">kalo kita pake kernel itu tetep gaakan bisa, apa masalahnya kenapa svm kali ini gagal, sebenarnya fungsi Gaussian yg td itu angkanya sekitar -3 sampai 3 artinya apa sekali kita ngangkat maka akan keangkat semua iyaa ngga, org datanya kita aja rentangnya -1 sampai 1 misal, mah itu masalahnya tentang skala juga(scale), dan resikonya adalah data kita ngga kepisah dengan baik artinya apa sebenarnya kita mau fungsi transformasi ininya ini kita atur juga, jadi kita bisa atur kapan kita mau pake gausian yg bentuknya yg semua ke angkat atau cuma spesifik tertentu doang yg mau kita angkat, nah cara ngaturnya itu seperti apa, di fungsi gausian ini sebenarnya ada g namanya standard deviasi</p>
+        <br>
+        <p class="text3">Oke coba kita liat lagi datanya, sebenarnya datanya ini ga masalah, tapi lihat skalanya datanya deketan banget yaa, oleh karena itu kita mau sekarang kita bukan cuma toleran dan juga bukan melihat perspektif baru tapi kita harus kita itu mau detail oriented atau big picture, kalo istilahnya matematikanya namanya adalah "gama" atau istilah lain kernel koefisien, semakin besarnya gama ini maka akan semakin detail oriented ngeliatnya, dan inilah hyper parameter tuning yg biasa digunakan algoritma SVM.</p>
+        <br>
+        <p class="text3">{'prep__numeric__poly__degree': [1, 2, 3],</p>
+        <p class="text3"> 'prep__numeric__poly__interaction_only': [True, False],</p>
+        <p class="text3"> 'algo__gamma': array([1.e-03, 1.e-02, 1.e-01, 1.e+00, 1.e+01, 1.e+02, 1.e+03]),</p>
+        <p class="text3"> 'algo__C': array([1.e-03, 1.e-02, 1.e-01, 1.e+00, 1.e+01, 1.e+02, 1.e+03])}</p>
+        <br>
+        <div class="image2">
+            <img src="images/rbf2.png" alt="">
+        </div>
+        <div class="image3">
+            <img src="images/rbf3.png" alt="">
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="text2">Big picture dan detail oriented</div>
+        <div class="image2">
+            <img src="images/gama2.png" alt="">
+        </div>
+         <div class="image3">
+            <img src="images/gama3.png" alt="">
+        </div>
+        <p class="text5">Semakin besar  𝛾  => semakin detail oriented => lebih sensitif, hindari memakai gama terlalu tinggi karena akan overfit</p>
+        <p class="text5">Semakin kecil  𝛾  => semakin melihat big picture => lebih smooth, hindari memakai gama terlalu rendah karena akan underfit</p>
+        <br>
+
+        <div class="image2">
+            <img src="images/gama4.png" alt="">
+        </div>
+        <div class="image3">
+            <img src="images/gama5.png" alt="">
+        </div>
+        <br>
+        <p class="text5">Oke bisa kita lihat pada gambar yg dipaling kiri, dengan gama yg sesuai dan detail oriented yg sesuai maka datanya itu akan ter pisah/ ter tranform atau apalah itu ya dengan baik yaa gays yaaa</p>
+        <p class="text5">Dan gambar yg kananya itu merupakan plot 3D dr prediksi kita tadi itu yaa gays yaaa yg pas lagikan mantap</p>
+        <br>
+        <div class="image3">
+            <img src="images/gama7.png" alt="">
+        </div>
+        <div class="image3">
+            <img src="images/gama6.png" alt="">
+        </div>
+        <br>
+        <p class="text5">Oke seperti yg sudah saya cakap td kalo gamanaya terlalu kecil -> big picture -> underfitt, dan gambar dipaling kiri merupakan plot underfit gama</p>
+        <p class="text5">Oke seperti yg sudah saya cakap td kalo gamanaya terlalu kecil -> big picture -> underfitt, dan gambar sebelah kananya merupakan plot sangat overfitt yaa gays ya, dan just info SVM bisa dibantu dengan scalling</p>
+
+        <br>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>

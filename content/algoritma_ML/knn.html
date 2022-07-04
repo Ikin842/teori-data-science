@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+  <!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!----===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!--<title>Dashboard Sidebar Menu</title>--> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <!--<img src="logo.png" alt="">-->
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">KNN</span>
+                    <span class="profession">with scikit learn</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon' ></i>
+                            <span class="text nav-text">Analytics</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon' ></i>
+                            <span class="text nav-text">Wallets</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="#">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        
+        <div class="image">
+            <img src="images/knn.png" alt="">
+        </div>
+        <br>
+        <div class="text2">KNN (K-Nearest neighbors)</div>
+        <p class="text3">KNN adalah sebuah algoritma pada machine learning yang paling sederhana.karena algoritma ini hanya mengandalkan tetangga terdekat.haaaahhh makssudnya gimana tuh?oke jadi gini misal kita mau ngekelasifikasiin apakah dia cewe atau cowo.nah kalo make algoritma KNN itu sesimpel kita melihat data kita itu tetangga paling dekatnya cowo atau cewe.kalo paling dekatnya cowo yaudah knn akan anggap itu sebagai cowo.gt yaa gays ya.selain menggunakan tetangga terdekat sebagai acuan untuk prediksi KNN juga mempertimbangkan distance(jarak) sebagai prediksi, diantaranya euclidean distance, manhattan distance dan chebisev distance.parameter tuning yg biasa digunakan untuk tuning:</p>
+        <br>
+        <p class="text3">Oke seperti yang sudah saya jelaskan sebelumnya yaa gayss yaaa, misal di gambar kanan ini kita ada illustrasi, kita bisa lihat ada dua titik dengan beda warna, dimana titik merah merepresentasikan data cowo dan biru cewe, dan kita mau ngeprediksi nih titik yang tengah tu masuk kemana sih??dengan algoritma KNN / kalo bahasa indonesianya itu tetangga sebelah, kita akan memprediksi titik tengah tersebut berdasarkan data yang paling dekat dengan data yang mau diprediksi, dalam memprediksi KNN juga mempertimbangkan jumlah tetangga atau bahasa teknikalnya itu 'n_neighbors' dan 'distance'(jarakanya) yang mana nanti dihyper parameter tuning akan kita tuning untuk mencari berapa sih jumlah tetangga yang cocok untuk memprediksi ini, dan apasih distance yang cocok untuk memprediksi data ini.Gampang lah yaaa algoritma ini mah, tinggal liat gambar clear, berikut hyper parameter tuning yang biasa digunakan untuk KNN, algo__weights itu maksudnya mau mempertimbangkan distance atau tidak, sedangkan algo__p itu adalah polynomial, materi poly ini tidak akan dibahas disini mungkin dilain halaman</p>
+        <br>
+        <p class="text3">{'algo__n_neighbors': array([ 1,  3,  5,  7,  9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29]),</p>
+        <p class="text3"> 'algo__weights': ['uniform', 'distance'],</p>
+        <p class="text3"> 'algo__p': [1, 1.5, 2]}</p>
+        <br><br><br>
+        <div class="image">
+            <img src="images/Euclidean-distance-in-tensorflow.png" alt="">
+        </div>
+        <div class="text2">1. Euclidean Distance</div>
+        <p class="text3">Dalam matematika, jarak Euklides atau metrik Euklides adalah jarak garis lurus "biasa" antara dua titik dalam ruang Euklides. Dengan jarak ini, ruang Euklides menjadi ruang metrik. Norma yang terkait disebut norma Euklides. Literatur lampau menyebutnya dengan metrik Pythagoras.</p>
+        <br><br><br><br><br>
+        <div class="image">
+            <img src="images/mh.png" alt="">
+        </div>
+        <div class="text2">2. Manhattan Distance</div>
+        <p class="text3">Jarak Manhattan antara dua titik adalah jumlah dari panjang ruas garis kedua titik tersebut terhadap tiap sumbu dalam koordinat Kartesius. Jarak ini disebut juga dengan panjang Manhattan, jarak taksi, jarak snake, norma {\displaystyle \ell _{1}}, dan jarak L¹. yaa bisa kita lihat dipinggir kanan digambar yang amat sangat kecil, saya males ngegedein gambarnya jadi yaudah liat aja, paham kan yaaa kalo manhattan itu kaya ular tangga intinya, dan just info manhattan adalah sebuah salah satu kota besar dinew york yang mana banyak gedung pencakar langit yg kalo kita jalan itu kaya ular tangga, makanya para ilmuan menamainya manhattan distance</p>
+        <br>
+        <div class="image">
+            <img src="images/images.jfif" alt="">
+        </div>
+        <div class="text2">3. Chebyshev Distance</div>
+        <p class="text3">Dalam matematika, jarak Chebyshev, metrik maksimum, atau metrik L∞ adalah metrik yang jarak antara dua vektornya adalah selisih maksimum di antara sumbu-sumbunya. Jarak ini dinamai dari Pafnuty Chebyshev.Jadi singkatnya Chebyshev itu kaya jalanya ratu catur bebas kemana aja</p>
+
+        
+        
+        <br><br><br>
+    </section>
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>

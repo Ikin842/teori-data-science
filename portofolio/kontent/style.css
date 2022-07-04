@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style for css*/
+
+.container {
+    width: 960px; /* untuk memberikan ukuran pd container dan ukkuran akan relatif dengan isi dr konten kita*/
+    margin: auto; /* */
+    background-color: #fff; /* untuk tengah yg warna putih*/
+    border-left: 5px lightskyblue solid; /*untuk memberi garispd atas gambar dengan warna biru*/
+    border-right: 5px salmon solid; /*untuk memberi garis pd bawah gambar dengan warna salmon*/
+
+}
+
+/* ini digunakan untuk membuat font standard pada body */
+body {
+    font: 16px/28px arial, sans-serif; /* 16px/28 == ukuran standrd font/28 jarak standard antar barisnya*/
+    background-color: #eaeaea; /* untuk backgrund colornya berwarna abu abu*/
+    color: 333; /* warna pada font bodynya agar tidak terlalu gelap */
+}
+
+.header {
+    padding: 20px; /* untuk memberika jarak pd header agar gateralu mepet sama atas*/
+    padding-bottom: 10px;
+}
+
+.header .judul {
+    font-size: 35px; /* untuk memberikan besaran font pd judul*/
+    font-weight: bold; /* bold pd judul*/
+    text-align: center;
+    margin-bottom: 10px;
+}
+.list ul li{
+    display: inline-block; /* biar tulisanya ke samping ngga kebawah */
+    margin-top: 10px; /*jarak atas antara judul dg ul li*/
+    margin-right: 80px; /*jarak antar listnya*/
+    margin-left: 80px;
+    margin-bottom: 5px;
+}
+.list{
+    border-top: 5px salmon solid;
+    background-color: lightgoldenrodyellow;
+
+}
+
+.list a{
+    text-decoration: none; /*non aktifin default linknya warna biru*/
+    color: salmon; /*kalo mousenya gadilink warnanya salmon*/
+    padding: 3px; /*memberi jarak antara link*/
+}
+/*supaya kalo mousenya berada pd link warna background dan tulisanya berubah*/
+.list a:hover{
+    background-color: lightskyblue; /*background link warna biru*/
+    color: white; /* font  linknya warna putih*/
+}
+.hero{
+    height: 320px; /* untuk tingg gambarnya*/
+    background-image: url(img/hero3.jpg); /* mencantumkan gambrnya*/
+    background-size: cover; 
+    background-position-x: center; /* biar ditengah/ atur kanan kir*/
+    background-position-y: center; /* biar ditengah/ atur atas bawah*/
+    border-bottom: 5px lightskyblue solid; /*untuk memberi garispd atas gambar dengan warna biru*/
+    border-top: 5px salmon solid; /*untuk memberi garis pd bawah gambar dengan warna salmon*/
+}
+.main {
+    padding: 20px; /*untuk memberika jarak antar sisi lh istilahnya pd content*/
+    width: 600px; /*kita geser ke kiri dan lebarnya 600px*/
+    box-sizing: border-box;/*supaya lebarnya ttp 600px kan diatas 20px ya*/
+    float: left; /*hati hati dalam menggunakan ini karena elemen .main akan dianggap tidak ada dan solusinya kita bisa menambahkan micro clear fix*/
+}
+.main h2{
+    font-size: 28px; /*untuk memberi size pd h2 pd kontent*/
+    font-weight: bold; /*memberi bold pd h2 content*/
+    
+}
+.main .penulis{
+    font-size: 11px; /*mengecilkan font*/
+    margin-top: -5px; /* supaya keatas*/
+}
+.main .penulis a{
+    color: salmon; /*biar linknya ganti warna*/
+    text-decoration: none;  /*biar garis bawahnya hilang*/
+}
+.main .penulis a:hover{
+    background-color: lightskyblue; /*background link warna biru*/
+    color: white; /* font  linknya warna putih*/
+}
+.main p{
+    margin-bottom: 20px; /*jarak margin bawahlah pokone*/
+    font-size: 14px; /*ukuran font pd <p>*/
+}
+/*siderbar*/
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+.sidebar h3{
+    font-weight: bold;
+    color: #666;
+}
+.sidebar img{
+    width: 150px; /*untuk mengecilkan gambar*/
+    height: 150px;
+    float: left; /*biar gambranya mengelilingi gambar*/
+    padding-right: 10px; /*jarak antara gambar dan teks*/
+}
+.sidebar p{
+    font: 12px/18px arial;
+    
+}
+.footer{
+    background-color: #333; /*background color pd footer*/
+    padding: 1px; /*padding foter*/
+}
+.footer .copy{
+    color: #eaeaea; /*font colornya*/
+    text-align: center; /*berada ditengah*/
+    font-size: 12px; /*ukuran font*/
+}
+
+/*kita tambhkan micro clear fiks biar*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
